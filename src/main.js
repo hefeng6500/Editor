@@ -1,23 +1,20 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
-import store from './store'
+import router from './routes'
+import store from './stores/store'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-// import './static/ueditor1_4_3_3-utf8-php/utf8-php/ueditor.config.js'
-// import './static/ueditor1_4_3_3-utf8-php/utf8-php/ueditor.all'
-
-
-
-
 
 /** 使用VueKindEditor  */
 import VueKindEditor from 'vue-kindeditor'
 import 'kindeditor/kindeditor-all-min.js'
 import 'kindeditor/themes/default/default.css'
 
+import CKEditor from '@ckeditor/ckeditor5-vue'
+
 Vue.use(VueKindEditor)
+Vue.use(CKEditor)
 
 
 Vue.config.productionTip = false
